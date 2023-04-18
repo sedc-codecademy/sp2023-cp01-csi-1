@@ -1,0 +1,40 @@
+*
+{
+    background-color: black;
+    color: silver;
+}
+
+nav{
+    display: flex;
+    height: 10em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.08em;
+    font-family: 'Oswald', sans-serif;
+    font-size: larger;
+}
+
+img
+{
+    scale: 90%
+
+}
+#home_1
+{
+    display: inline;
+    scale: 5%;
+}
+
+hr
+{
+    margin-left: 20%;
+}
+
+button
+{
+    height: 5em;
+    width: 10em;
+    border-radius: 1em;
+    background-color: darkgreen;
+}
