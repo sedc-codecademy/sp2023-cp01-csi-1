@@ -13,6 +13,7 @@ nav{
     margin: 0.08em;
     font-family: 'Oswald', sans-serif;
     font-size: larger;
+    margin-bottom: 2em;
 }
 
 img
@@ -20,6 +21,7 @@ img
     scale: 90%
 
 }
+
 #home_1
 {
     display: inline;
@@ -37,4 +39,50 @@ button
     width: 10em;
     border-radius: 1em;
     background-color: darkgreen;
+}
+
+p,h1
+    {
+        font-family: 'Oswald', sans-serif;
+    }
+
+ .hor_line
+    {
+        margin: auto;
+        color: grey;
+    }
+
+.cry_img
+{
+    display: inline-block;
+    height: 6em;
+    width: 6em;
+}
+
+.eth_img
+{
+    display: inline-block;
+    height: 8em;
+    width: 6em;
+}
+
+.cry_text
+{
+    display: inline-block;
+    margin-left: 2em;
+}
+
+div
+{
+    display: inline;
+}
+
+.coins_logo
+{
+    display: inline-block;
+}
+
+.info
+{
+    display: flex;
 }
