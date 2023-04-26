@@ -56,28 +56,28 @@ info.addEventListener("click", function () {
     <div class="info"><div class="coins_logo"><img class="cry_img" src="./img/bitcoin.png" alt=""></div>
     <div class="cry_text"><p>Founded in 2009, Bitcoin was the first cryptocurrency and is still the most commonly traded. The currency was developed by Satoshi Nakamoto – widely believed to be a pseudonym for an individual or group of people whose precise identity remains unknown.</p></div></div>
 
-    <hr class="hor_line">
+    
 
     <h1>Ethereum</h1>
 
     <div class="info"><div class="coins_logo"><img class="eth_img" src="./img/ethereum.png" alt=""></div>
     <div class="cry_text"><p>Developed in 2015, Ethereum is a blockchain platform with its own cryptocurrency, called Ether (ETH) or Ethereum. It is the most popular cryptocurrency after Bitcoin.</p></div></div>
 
-    <hr class="hor_line">
+ 
 
     <h1>Litecoin</h1>
 
     <div class="info"><div class="coins_logo"><img class="cry_img" src="./img/Litecoin.png" alt=""></div>
     <div class="cry_text"><p>This currency is most similar to bitcoin but has moved more quickly to develop new innovations, including faster payments and processes to allow more transactions.</p></div></div>
 
-    <hr class="hor_line">
+    
 
     <h1>Ripple</h1>
 
     <div class="info"><div class="coins_logo"><img class="cry_img" src="./img/ripple.png" alt=""></div>
     <div class="cry_text"><p>Ripple is a distributed ledger system that was founded in 2012. Ripple can be used to track different kinds of transactions, not just cryptocurrency. The company behind it has worked with various banks and financial institutions.</p></div></div>
 
-    <hr class="hor_line">
+    
 
     </div>`;
 });
@@ -85,12 +85,33 @@ info.addEventListener("click", function () {
 let login = document.getElementById("login");
 login.addEventListener("click", function(){
     display.innerHTML =
-    `<div><div id="login_site">
+    `<div><div id="login_page">
     <label for="username">Username: </label>
     <input id="username" type="text">
 
     <label for="password">Password: </label>
     <input id="password" type="text">
+    </div></div>`;
+
+})
+
+let register = document.getElementById("reg");
+register.addEventListener("click", function(){
+    display.innerHTML =
+    `<div><div id="register_page">
+    <form action="post">
+    <label for="firstName">First Name:</label>
+    <input id="firstName" type="text">
+
+    <label for="lastName">Last Name: </label>
+    <input id="password" type="text">
+    
+    <label for="email">e-mail: </label>
+    <input id="email" type="email">
+
+    <button type="submit">Submit</button>
+    </form>
+
     </div></div>`;
 
 })

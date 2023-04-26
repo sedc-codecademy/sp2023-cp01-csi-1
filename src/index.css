@@ -6,19 +6,20 @@
 
 nav{
     display: flex;
-    height: 10em;
+    height: 5em;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: 0.08em;
     font-family: 'Oswald', sans-serif;
     font-size: larger;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    
 }
 
 img
 {
-    scale: 90%
+    scale: 60%
 
 }
 
@@ -35,13 +36,13 @@ hr
 
 button
 {
-    height: 5em;
-    width: 10em;
+    height: 3em;
+    width: 6em;
     border-radius: 1em;
     background-color: darkgreen;
 }
 
-p,h1
+p,h1,label,input
     {
         font-family: 'Oswald', sans-serif;
     }
@@ -87,14 +88,23 @@ div
     display: flex;
 }
 
-#login_site
+#login_page
 {
-    display:flex;
+    display:inline-block;
+    align-items: center;
     margin-top: 3em;
-    margin-left: 10em;
+    margin-left: 20em;
 }
 
-#username,#password
+#register_page
+{
+    display:inline-block;
+    align-items: center;
+    margin-top: 3em;
+    margin-left: 20em;
+}
+
+#username,#password,#firstName,#lastName,#email
 {
     display:flex;
 }
@@ -103,4 +113,6 @@ div
 input
 {
     border-radius: 1em;
+    margin: 1em;
+
 }
