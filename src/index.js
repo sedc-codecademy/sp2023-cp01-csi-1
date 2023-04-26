@@ -81,3 +81,16 @@ info.addEventListener("click", function () {
 
     </div>`;
 });
+
+let login = document.getElementById("login");
+login.addEventListener("click", function(){
+    display.innerHTML =
+    `<div><div id="login_site">
+    <label for="username">Username: </label>
+    <input id="username" type="text">
+
+    <label for="password">Password: </label>
+    <input id="password" type="text">
+    </div></div>`;
+
+})

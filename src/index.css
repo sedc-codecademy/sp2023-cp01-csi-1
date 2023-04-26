@@ -86,3 +86,22 @@ div
 {
     display: flex;
 }
+
+#login_site
+{
+    display:flex;
+    margin-top: 3em;
+    margin-left: 10em;
+}
+
+#username,#password
+{
+    display:flex;
+    
+}
+
+
+input
+{
+    border-radius: 1em;
+}
