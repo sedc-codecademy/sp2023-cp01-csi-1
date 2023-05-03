@@ -1,0 +1,118 @@
+*
+{
+    background-color: black;
+    color: silver;
+}
+
+nav{
+    display: flex;
+    height: 5em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.08em;
+    font-family: 'Oswald', sans-serif;
+    font-size: larger;
+    margin-bottom: 1em;
+    
+}
+
+img
+{
+    scale: 60%
+
+}
+
+#home_1
+{
+    display: inline;
+    scale: 5%;
+}
+
+hr
+{
+    margin-left: 20%;
+}
+
+button
+{
+    height: 3em;
+    width: 6em;
+    border-radius: 1em;
+    background-color: darkgreen;
+}
+
+p,h1,label,input
+    {
+        font-family: 'Oswald', sans-serif;
+    }
+
+ .hor_line
+    {
+        margin: auto;
+        color: grey;
+    }
+
+.cry_img
+{
+    display: inline-block;
+    height: 6em;
+    width: 6em;
+}
+
+.eth_img
+{
+    display: inline-block;
+    height: 8em;
+    width: 6em;
+}
+
+.cry_text
+{
+    display: inline-block;
+    margin-left: 2em;
+}
+
+div
+{
+    display: inline;
+}
+
+.coins_logo
+{
+    display: inline-block;
+}
+
+.info
+{
+    display: flex;
+}
+
+#login_page
+{
+    display:inline-block;
+    align-items: center;
+    margin-top: 3em;
+    margin-left: 20em;
+}
+
+#register_page
+{
+    display:inline-block;
+    align-items: center;
+    margin-top: 3em;
+    margin-left: 20em;
+}
+
+#username,#password,#firstName,#lastName,#email
+{
+    display:flex;
+}
+
+
+input
+{
+    border-radius: 1em;
+    margin: 1em;
+
+}
