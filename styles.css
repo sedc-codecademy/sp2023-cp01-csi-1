@@ -1,0 +1,519 @@
+/* #111d2d */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  color: white;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #949494;
+  text-decoration: none;
+}
+
+nav {
+  position: sticky !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  max-width: 100%;
+  height: auto;
+  background-color: #111d2d;
+  color: white;
+}
+
+.name-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-right: 36px;
+}
+
+#navbarNav {
+  justify-content: space-between;
+}
+
+/* homepage */
+
+h1,
+p {
+  color: rgb(212, 212, 212);
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.hero {
+  background-image: url('public/blockchain-technology-background-gradient-blue.jpg');
+  background-size: cover;
+  height: 100vh;
+  padding-top: 25vh;
+  margin-bottom: 3rem;
+  /* padding-top: 600px;
+  padding-bottom: 600px; */
+}
+
+.test {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content {
+  width: 50vw;
+  padding-left: 5vw;
+}
+
+/* main content */
+
+.main-section {
+  height: 70vh;
+  width: auto;
+  margin-bottom: 5rem;
+}
+
+.main-section-header {
+  margin-bottom: 2rem;
+  color: #4a7bb6;
+  /* color: #111d2d; */
+}
+
+.card-group {
+  gap: 2rem;
+}
+
+.card-borders {
+  border: 1px solid #4a7bb6 !important;
+}
+
+/* footer */
+
+.bg-footer {
+  bottom: 0;
+  background-color: #111d2d;
+  margin: 0 !important;
+  max-width: 100%;
+  height: 200px;
+}
+
+.footer-span {
+  color: white !important;
+  font-size: 1.5rem;
+}
+
+.footer-span:hover {
+  color: #111d2d;
+}
+
+/* CSS for mobile devices */
+@media only screen and (max-width: 767px) {
+  .bg-footer {
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footer-span {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* CSS for PC and laptop */
+@media only screen and (min-width: 768px) {
+  /* No additional styles needed for PC and laptop */
+}
+
+/* homepage END*/
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Set a fixed width */
+  max-width: 100%;
+
+  /* Updated styles */
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Arrange elements vertically */
+  justify-content: space-between; /* Align elements vertically */
+  height: 100%; /* Ensure the card expands vertically */
+}
+
+/* Card title style */
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Card text (overview) style */
+.card-text {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* List group style (details) */
+.list-group {
+  margin-top: 15px;
+}
+
+.svg-card {
+  width: 2rem;
+  height: 2rem;
+}
+
+.card-title,
+.card-text {
+  color: black !important;
+}
+
+/* List group item style */
+.list-group-item {
+  padding: 5px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+/* Responsive styles */
+
+/* For large devices and above */
+@media (min-width: 992px) {
+  .page {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 20px;
+  }
+}
+
+/* For medium devices and above */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .page {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 20px;
+    max-width: calc(50% - 40px);
+  }
+
+  .hero {
+    padding-top: 5vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* For small devices and above */
+@media (max-width: 767.98px) {
+  .card {
+    margin: 20px 0;
+  }
+  h1,
+  p {
+    font-size: 16px;
+  }
+
+  .test {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .hero {
+    padding-top: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  svg {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+#infoContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
+}
+
+/* LOGIN AND REGISTER */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.LoginRegistercard {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Add some padding to the top of the page */
+.page {
+  padding-top: 20px;
+}
+
+/* Add some margin to the Register and Login links */
+.LoginRegistercard p {
+  margin: 10px 0;
+}
+
+#registerLink,
+#loginLink {
+  color: blue;
+}
+
+/* Responsive styles */
+
+/* For small devices and above */
+@media (min-width: 576px) {
+  .LoginRegistercard {
+    max-width: 400px;
+  }
+}
+
+/* For medium devices and above */
+@media (min-width: 768px) {
+  .LoginRegistercard {
+    max-width: 500px;
+  }
+}
+
+/* For large devices and above */
+@media (min-width: 992px) {
+  .LoginRegistercard {
+    max-width: 600px;
+  }
+}
+
+/* CSS for the change direction arrow icons */
+/* CSS for the change direction arrow icons */
+.change-direction {
+  display: inline-block;
+  width: 15px;
+  /* Adjust the width as desired */
+  height: 15px;
+  /* Adjust the height as desired */
+}
+
+.arrow-up {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid green;
+}
+
+.arrow-down {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid red;
+}
+
+/* WALLET*/
+#cryptoList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.crypto-list-item {
+  width: calc(33.33% - 20px);
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.crypto-card {
+  display: flex;
+  align-items: center;
+}
+
+.crypto-card img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.crypto-info {
+  flex: 1;
+}
+.crypto-quantity-input {
+  width: 30px;
+}
+
+.quantity-input {
+  /* display: flex;
+  align-items: center; */
+  margin-top: 10px;
+  width: 5px;
+}
+
+.quantity-input span {
+  margin-right: 5px;
+}
+
+.buy-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#currencyList {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.owned-crypto {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.owned-crypto img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+#currencyList {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#currencyList th,
+#currencyList td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#currencyList th {
+  background-color: #f2f2f2;
+}
+
+.currency-symbol img {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/*coinData*/
+#coinData {
+  width: 40%;
+  position: fixed;
+  top: 10%;
+  right: 0;
+  background-color: #e3dede;
+  border-radius: 5%;
+}
+
+/*coinData END*/
+
+#coinData {
+  opacity: 1;
+}
+
+/* latest responsivness home page */
+/* CSS for mobile devices */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding-top: 15vh;
+    margin-bottom: 2rem;
+  }
+
+  .test {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .content {
+    width: 90vw;
+    padding-left: 0;
+  }
+
+  .main-section {
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  .main-section-header {
+    font-size: 24px;
+  }
+
+  .card-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card-borders {
+    border: 1px solid #4a7bb6 !important;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+}
+
+/* CSS for PC and laptop */
+@media only screen and (max-width: 1100px) {
+  .hero {
+    padding-top: 15vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}

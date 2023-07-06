@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos/dist/aos.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-lg">
+      <a class="navbar name-header" href="#">Crypto App</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="homeBtn" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="statisticsBtn" href="#">Statistics</a>
+          </li>
+          <li class="nav-item" style="display: none">
+            <a class="nav-link" id="simulatorBtn" href="#">Crypto Simulator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="infoBtn" href="#">Info Center</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="loginBtn" href="#">Login</a>
+          </li>
+          <li class="nav-item" id="logoutNavItem" style="display: none">
+            <a class="nav-link" id="logoutBtn" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="homePage"></div>
+      <div id="statisticsPage" class="page">
+        <div id="topGainersTable"></div>
+        <div id="topLosersTable"></div>
+        <div id="top100Coins"></div>
+        <div id="coinData"></div>
+      </div>
+      <div id="simulatorPage" class="page"></div>
+      <div id="infoPage" class="page">
+        <div id="infoContent"></div>
+      </div>
+      <div id="loginPage" class="page">
+        <div id="loginFormContainer"></div>
+      </div>
+    </div>
+    <div id="homePageHero"></div>
+
+    <!-- <div class="main-section">
+    <div class="container">
+    <div class="row">
+        <h1 class="main-section-header">Buy and trade the most popular coins instantly!</h1>
+      </div>
+      <div class="card-group">
+        <div class="card text-center align-items-center card-borders">
+            <img src="/public/bitcoin-logo-svgrepo-com.svg" alt="" class="card-img-top svg-card">
+            <div class="card-body">
+              <h5 class="card-title">Bitcoin</h5>
+              <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam corporis consequatur nisi numquam est.</p>
+              <button class="btn btn-primary">Info</button>
+            </div>
+        </div>
+        <div class="card text-center align-items-center card-borders">
+          <img src="/public/ethereum-1.svg" alt="" class="card-img-top svg-card">
+          <div class="card-body">
+            <h5 class="card-title">Ethereum</h5>
+            <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam corporis consequatur nisi numquam est.</p>
+            <button class="btn btn-primary">Info</button>
+          </div>
+      </div>
+      <div class="card text-center align-items-center card-borders">
+        <img src="/public/tether-seeklogo.com.svg" alt="" class="card-img-top svg-card">
+        <div class="card-body">
+          <h5 class="card-title">Tether USD</h5>
+          <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam corporis consequatur nisi numquam est.</p>
+          <button class="btn btn-primary">Info</button>
+        </div>
+    </div>
+      </div>
+    </div>
+  </div> -->
+
+    <!-- footer -->
+
+    <div class="container bg-footer">
+      <div class="d-flex justify-content-around align-items-center py-2 my-2">
+        <div class="col-lg-4 mt-5">
+          <div class="d-flex flex-wrapper">
+            <a href="#" class="footer-span px-2">Home</a>
+            <a href="#" class="footer-span px-2">Statistics</a>
+            <a href="#" class="footer-span px-2">Info Center</a>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-5">
+          <span class="footer-span"
+            >Made by the CryptoSimulator team number one!</span
+          >
+        </div>
+      </div>
+    </div>
+    <script src="./src/script.js" type="module"></script>
+    <script src="https://unpkg.com/aos/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        startEvent: 'load',
+      });
+    </script>
+  </body>
+</html>
