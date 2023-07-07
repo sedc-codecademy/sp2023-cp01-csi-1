@@ -622,7 +622,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <img src="/public/tether-seeklogo.com.svg" alt="" class="card-img-top svg-card">
         <div class="card-body">
           <h5 class="card-title">Tether USD</h5>
-          <p class="card-text mb-4">The stablecoin solution for seamless digital transactions. Stability, security, and simplicity in one cryptocurrency. Available at any time!</p>
+          <p class="card-text mb-4">The stablecoin solution for seamless digital transactions. Stability, security, and simplicity in one cryptocurrency. </p>
           <button class="btn btn-primary">Info</button>
         </div>
     </div>
