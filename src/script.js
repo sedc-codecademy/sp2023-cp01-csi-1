@@ -606,7 +606,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <img src="/public/bitcoin-logo-svgrepo-com.svg" alt="" class="card-img-top svg-card">
             <div class="card-body">
               <h5 class="card-title">Bitcoin</h5>
-              <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam corporis consequatur nisi numquam est.</p>
+              <p class="card-text mb-4">Bitcoin: The digital gold that revolutionized the world. A symbol of innovation and financial freedom. Trade it freely on our exchange!</p>
               <button class="btn btn-primary">Info</button>
             </div>
         </div>
@@ -614,7 +614,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <img src="/public/ethereum-1.svg" alt="" class="card-img-top svg-card">
           <div class="card-body">
             <h5 class="card-title">Ethereum</h5>
-            <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam corporis consequatur nisi numquam est.</p>
+            <p class="card-text mb-4">Empowering decentralized applications and smart contracts. Unleash the potential of blockchain technology with Ethereum.</p>
             <button class="btn btn-primary">Info</button>
           </div>
       </div>
@@ -622,7 +622,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <img src="/public/tether-seeklogo.com.svg" alt="" class="card-img-top svg-card">
         <div class="card-body">
           <h5 class="card-title">Tether USD</h5>
-          <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam corporis consequatur nisi numquam est.</p>
+          <p class="card-text mb-4">The stablecoin solution for seamless digital transactions. Stability, security, and simplicity in one cryptocurrency. Available at any time!</p>
           <button class="btn btn-primary">Info</button>
         </div>
     </div>
@@ -871,10 +871,7 @@ function loadInfoCenterData() {
         What does our <span class="bold">CryptoApp</span> offer?
       </h4>
       <p class="info-p">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Exercitationem quia ipsum blanditiis eligendi, fuga ab, ipsam, at
-        harum quod ratione assumenda dolores accusantium asperiores sequi
-        ducimus atque nobis error numquam.
+      Welcome to our CryptoStore, where you can effortlessly trade, buy, and explore the exciting world of cryptocurrencies. Take advantage of our user-friendly interface, secure transactions, and a wide range of digital assets. Start your crypto journey with us and unlock limitless opportunities in the ever-evolving blockchain realm.
       </p>
     </div>
 
@@ -883,10 +880,7 @@ function loadInfoCenterData() {
         What is a <span class="bold">Cryptocurrency?</span>
       </h4>
       <p class="info-p">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
-        fugiat soluta inventore, repudiandae atque assumenda mollitia, et
-        quo beatae laborum natus, modi repellendus libero incidunt odio
-        corrupti culpa minus iure.
+      Cryptocurrency, a digital form of currency, utilizes cryptography for secure transactions and operates independently of central banks. It leverages decentralized technology, such as blockchain, to ensure transparency, immutability, and resistance to fraud. Cryptocurrencies offer a global, borderless, and decentralized financial system, revolutionizing the way we perceive and engage with money.
       </p>
     </div>
 
@@ -895,12 +889,7 @@ function loadInfoCenterData() {
         How does a <span class="bold">Blockchain</span> work?
       </h4>
       <p class="info-p">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit cumque
-        incidunt sunt provident voluptatem quis quam cupiditate mollitia
-        blanditiis consequatur saepe qui possimus cum, laboriosam labore
-        unde, minus, neque deleniti! Sit repellat atque alias suscipit odio
-        laudantium voluptatem totam ex incidunt, quasi est nostrum optio
-        debitis itaque facilis soluta similique?
+      Blockchain is a revolutionary technology that serves as a decentralized and transparent digital ledger. It records and verifies transactions across multiple computers, ensuring immutability and security. By removing intermediaries and enabling peer-to-peer interactions, blockchain fosters trust, traceability, and efficiency in various industries, from finance and supply chain to healthcare and beyond
       </p>
     </div>
   </div>
