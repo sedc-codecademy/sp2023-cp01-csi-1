@@ -345,10 +345,10 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
           <div class="mb-3">
             <label for="passwordInput" class="form-label">Password</label>
-            <input type="password" class="form-control" id="passwordInput" required>
+            <input type="password" class="form-control mb-4" id="passwordInput" required>
           </div>
-          <button type="submit" class="btn btn-primary">Login</button>
-          <p class="mt-3">Not registered? <a href="#" id="registerLink">Click here to register</a></p>
+          <button type="submit" class="btn btn-primary mb-4">Login</button>
+          <p class="mt-3 text-dark">Not registered? <a href="#" id="registerLink"><span class="bold">Click here to register</span></a></p>
         </div>
       </div>
     </div>
@@ -439,9 +439,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Attach the logoutUser() function to the logout button click event
     const logoutBtn = document.getElementById('logoutBtn');
-    logoutBtn.addEventListener('click', logoutUser) ;
-    
-
+    logoutBtn.addEventListener('click', logoutUser);
   }
 
   function createRegistrationForm() {
@@ -657,16 +655,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const simulatorPageContent = `
       <h2>Crypto Simulator</h2>
       <div id="walletInfo">
-        <h3>Wallet Balance: $<span id="walletBalance">1,000,000</span></h3>
+        <h3 class="mb-5">Wallet Balance: $<span id="walletBalance">1,000,000</span></h3>
         <div id="cryptoList"></div>
         <div id="walletStats">
           <h4>Wallet Statistics:</h4>
-          <p>Profit/Loss: $<span id="profitLoss">0</span></p>
-          <p>Oscillation: <span id="oscillation">0%</span></p>
+          <p class="text-dark">Profit/Loss: $<span id="profitLoss">0</span></p>
+          <p class="text-dark">Oscillation: <span id="oscillation">0%</span></p>
         </div>
         <div id="walletCurrencies">
         <h4>Owned Currencies:</h4>
-        <table id="currencyList">
+        <table id="currencyList" class="mb-5">
         <thead>
           <tr>
             <th>Name</th>
@@ -713,7 +711,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="crypto-card">
           <img src="${coin.image}" alt="${coin.name}">
           <div class="crypto-info">
-            <h4>${coin.name}</h4>
+            <h4><span class="bold">${coin.name}<span></h4>
             <p id="Price">Price: $${coin.current_price}</p>
             <div class="quantity-input">
               <span>Quantity:</span>
@@ -856,122 +854,171 @@ function loadInfoCenterData() {
   const infoContent = document.getElementById('infoContent');
   infoContent.innerHTML = ''; // Clear existing content
 
+  const infoPageNew = document.createElement('div');
+  infoPageNew.classList.add('infoCenter');
+  infoPageNew.classList.add('mb-5');
+  infoPageNew.innerHTML = `
+  <div class="container">
+    <h2 class="mb-5 info-title-border">Information Center Page</h2>
+
+    <div class="items">
+      <h4 class="info-h4">
+        What does our <span class="bold">CryptoApp</span> offer?
+      </h4>
+      <p class="info-p">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Exercitationem quia ipsum blanditiis eligendi, fuga ab, ipsam, at
+        harum quod ratione assumenda dolores accusantium asperiores sequi
+        ducimus atque nobis error numquam.
+      </p>
+    </div>
+
+    <div class="items">
+      <h4 class="info-h4">
+        What is a <span class="bold">Cryptocurrency?</span>
+      </h4>
+      <p class="info-p">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+        fugiat soluta inventore, repudiandae atque assumenda mollitia, et
+        quo beatae laborum natus, modi repellendus libero incidunt odio
+        corrupti culpa minus iure.
+      </p>
+    </div>
+
+    <div class="items">
+      <h4 class="info-h4">
+        How does a <span class="bold">Blockchain</span> work?
+      </h4>
+      <p class="info-p">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit cumque
+        incidunt sunt provident voluptatem quis quam cupiditate mollitia
+        blanditiis consequatur saepe qui possimus cum, laboriosam labore
+        unde, minus, neque deleniti! Sit repellat atque alias suscipit odio
+        laudantium voluptatem totam ex incidunt, quasi est nostrum optio
+        debitis itaque facilis soluta similique?
+      </p>
+    </div>
+  </div>
+`;
+
+  infoContent.appendChild(infoPageNew);
+
   // Sample data for Bitcoin, Ethereum, and Litecoin
-  const data = [
-    {
-      title: 'Bitcoin (BTC)',
-      color: '#FF9900',
-      overview:
-        'Bitcoin is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.',
-      details: [
-        'Symbol: BTC',
-        'Market Cap: $700 billion',
-        'Algorithm: SHA-256',
-        'Genesis Date: January 3, 2009',
-      ],
-    },
-    {
-      title: 'Ethereum (ETH)',
-      color: '#3C3C3D',
-      overview:
-        'Ethereum is an open-source, blockchain-based platform that enables the creation of smart contracts and decentralized applications (DApps). It has its native cryptocurrency called Ether (ETH).',
-      details: [
-        'Symbol: ETH',
-        'Market Cap: $300 billion',
-        'Blockchain: Ethereum',
-        'Genesis Date: July 30, 2015',
-      ],
-    },
-    {
-      title: 'Litecoin (LTC)',
-      color: '#838383',
-      overview:
-        'Litecoin is a peer-to-peer cryptocurrency that enables instant, near-zero cost payments to anyone in the world. It is an open-source project released under the MIT/X11 license.',
-      details: [
-        'Symbol: LTC',
-        'Market Cap: $10 billion',
-        'Algorithm: Scrypt',
-        'Genesis Date: October 7, 2011',
-      ],
-    },
-    {
-      title: 'Cardano (ADA)',
-      color: '#4AADA5',
-      overview:
-        'Cardano is a blockchain platform that aims to provide a more secure and sustainable platform for the development and execution of smart contracts and decentralized applications. It emphasizes a research-driven approach and aims to provide a more balanced and inclusive ecosystem for cryptocurrencies.',
-      details: [
-        'Symbol: ADA',
-        'Market Cap: $5 billion',
-        'Consensus Algorithm: Ouroboros',
-        'Genesis Date: 2017',
-      ],
-    },
-    {
-      title: 'Polkadot (DOT)',
-      color: '#E6007A',
-      overview:
-        'Polkadot is a multi-chain platform that enables the interoperability of various blockchains. It aims to provide a scalable and secure infrastructure for the development of decentralized applications and services. Polkadot allows different blockchains to communicate and share information, creating a more connected and efficient ecosystem.',
-      details: [
-        'Symbol: DOT',
-        'Market Cap: $2 billion',
-        'Consensus Algorithm: Nominated Proof-of-Stake (NPoS)',
-        'Genesis Date: 2020',
-      ],
-    },
-    {
-      title: 'Binance Coin (BNB)',
-      color: '#F3BA2F',
-      overview:
-        'Binance Coin (BNB) is the native cryptocurrency of the Binance exchange, one of the largest cryptocurrency exchanges in the world. BNB is used for various purposes within the Binance ecosystem, including trading fee discounts, participation in token sales, and more.',
-      details: [
-        'Symbol: BNB',
-        'Market Cap: $50 billion',
-        'Blockchain: Binance Chain',
-        'Genesis Date: July 2017',
-      ],
-    },
-    {
-      title: 'Chainlink (LINK)',
-      color: '#2A5ADA',
-      overview:
-        'Chainlink is a decentralized oracle network that enables smart contracts on various blockchains to securely connect with real-world data, APIs, and traditional payment systems. It aims to bridge the gap between blockchain-based smart contracts and real-world applications.',
-      details: [
-        'Symbol: LINK',
-        'Market Cap: $15 billion',
-        'Oracle Network: Chainlink',
-        'Genesis Date: September 2017',
-      ],
-    },
-    {
-      title: 'Stellar (XLM)',
-      color: '#272D63',
-      overview:
-        'Stellar is an open-source, decentralized blockchain platform designed to facilitate fast, low-cost international money transfers and facilitate the issuance and exchange of digital assets. Stellar aims to provide an inclusive financial infrastructure that enables individuals, businesses, and financial institutions to transact seamlessly across borders.',
-      details: [
-        'Symbol: XLM',
-        'Market Cap: $4 billion',
-        'Consensus Algorithm: Stellar Consensus Protocol (SCP)',
-        'Genesis Date: July 2014',
-      ],
-    },
-  ];
+  // const data = [
+  //   {
+  //     title: 'Bitcoin (BTC)',
+  //     color: '#FF9900',
+  //     overview:
+  //       'Bitcoin is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.',
+  //     details: [
+  //       'Symbol: BTC',
+  //       'Market Cap: $700 billion',
+  //       'Algorithm: SHA-256',
+  //       'Genesis Date: January 3, 2009',
+  //     ],
+  //   },
+  //   {
+  //     title: 'Ethereum (ETH)',
+  //     color: '#3C3C3D',
+  //     overview:
+  //       'Ethereum is an open-source, blockchain-based platform that enables the creation of smart contracts and decentralized applications (DApps). It has its native cryptocurrency called Ether (ETH).',
+  //     details: [
+  //       'Symbol: ETH',
+  //       'Market Cap: $300 billion',
+  //       'Blockchain: Ethereum',
+  //       'Genesis Date: July 30, 2015',
+  //     ],
+  //   },
+  //   {
+  //     title: 'Litecoin (LTC)',
+  //     color: '#838383',
+  //     overview:
+  //       'Litecoin is a peer-to-peer cryptocurrency that enables instant, near-zero cost payments to anyone in the world. It is an open-source project released under the MIT/X11 license.',
+  //     details: [
+  //       'Symbol: LTC',
+  //       'Market Cap: $10 billion',
+  //       'Algorithm: Scrypt',
+  //       'Genesis Date: October 7, 2011',
+  //     ],
+  //   },
+  //   {
+  //     title: 'Cardano (ADA)',
+  //     color: '#4AADA5',
+  //     overview:
+  //       'Cardano is a blockchain platform that aims to provide a more secure and sustainable platform for the development and execution of smart contracts and decentralized applications. It emphasizes a research-driven approach and aims to provide a more balanced and inclusive ecosystem for cryptocurrencies.',
+  //     details: [
+  //       'Symbol: ADA',
+  //       'Market Cap: $5 billion',
+  //       'Consensus Algorithm: Ouroboros',
+  //       'Genesis Date: 2017',
+  //     ],
+  //   },
+  //   {
+  //     title: 'Polkadot (DOT)',
+  //     color: '#E6007A',
+  //     overview:
+  //       'Polkadot is a multi-chain platform that enables the interoperability of various blockchains. It aims to provide a scalable and secure infrastructure for the development of decentralized applications and services. Polkadot allows different blockchains to communicate and share information, creating a more connected and efficient ecosystem.',
+  //     details: [
+  //       'Symbol: DOT',
+  //       'Market Cap: $2 billion',
+  //       'Consensus Algorithm: Nominated Proof-of-Stake (NPoS)',
+  //       'Genesis Date: 2020',
+  //     ],
+  //   },
+  //   {
+  //     title: 'Binance Coin (BNB)',
+  //     color: '#F3BA2F',
+  //     overview:
+  //       'Binance Coin (BNB) is the native cryptocurrency of the Binance exchange, one of the largest cryptocurrency exchanges in the world. BNB is used for various purposes within the Binance ecosystem, including trading fee discounts, participation in token sales, and more.',
+  //     details: [
+  //       'Symbol: BNB',
+  //       'Market Cap: $50 billion',
+  //       'Blockchain: Binance Chain',
+  //       'Genesis Date: July 2017',
+  //     ],
+  //   },
+  //   {
+  //     title: 'Chainlink (LINK)',
+  //     color: '#2A5ADA',
+  //     overview:
+  //       'Chainlink is a decentralized oracle network that enables smart contracts on various blockchains to securely connect with real-world data, APIs, and traditional payment systems. It aims to bridge the gap between blockchain-based smart contracts and real-world applications.',
+  //     details: [
+  //       'Symbol: LINK',
+  //       'Market Cap: $15 billion',
+  //       'Oracle Network: Chainlink',
+  //       'Genesis Date: September 2017',
+  //     ],
+  //   },
+  //   {
+  //     title: 'Stellar (XLM)',
+  //     color: '#272D63',
+  //     overview:
+  //       'Stellar is an open-source, decentralized blockchain platform designed to facilitate fast, low-cost international money transfers and facilitate the issuance and exchange of digital assets. Stellar aims to provide an inclusive financial infrastructure that enables individuals, businesses, and financial institutions to transact seamlessly across borders.',
+  //     details: [
+  //       'Symbol: XLM',
+  //       'Market Cap: $4 billion',
+  //       'Consensus Algorithm: Stellar Consensus Protocol (SCP)',
+  //       'Genesis Date: July 2014',
+  //     ],
+  //   },
+  // ];
 
-  data.forEach(function (coin) {
-    const card = document.createElement('div');
-    card.classList.add('card');
-    card.innerHTML = `
-      <div class="card-body">
-        <h5 class="card-title">${coin.title}</h5>
-        <p class="card-text">${coin.overview}</p>
-        <ul class="list-group list-group-flush">
-          ${coin.details
-            .map((detail) => `<li class="list-group-item">${detail}</li>`)
-            .join('')}
-        </ul>
-      </div>
-    `;
-    card.style.backgroundColor = coin.color;
+  // data.forEach(function (coin) {
+  //   const card = document.createElement('div');
+  //   card.classList.add('card');
+  //   card.innerHTML = `
+  //     <div class="card-body">
+  //       <h5 class="card-title">${coin.title}</h5>
+  //       <p class="card-text">${coin.overview}</p>
+  //       <ul class="list-group list-group-flush">
+  //         ${coin.details
+  //           .map((detail) => `<li class="list-group-item">${detail}</li>`)
+  //           .join('')}
+  //       </ul>
+  //     </div>
+  //   `;
+  //   // card.style.backgroundColor = coin.color;
 
-    infoContent.appendChild(card);
-  });
+  //   infoContent.appendChild(card);
+  // });
 }

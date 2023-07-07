@@ -55,6 +55,13 @@ h1 {
   font-weight: 600;
 }
 
+h2 {
+  margin-top: 5vh;
+  font-size: 70px;
+  font-weight: 600;
+  color: #111d2d;
+}
+
 p {
   font-size: 20px;
   font-weight: 300;
@@ -82,6 +89,10 @@ p {
   padding-left: 5vw;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 /* main content */
 
 .main-section {
@@ -91,7 +102,7 @@ p {
 }
 
 .main-section-header {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   color: #4a7bb6;
   /* color: #111d2d; */
 }
@@ -121,6 +132,26 @@ p {
 
 .footer-span:hover {
   color: #111d2d;
+}
+
+.hover-footer:hover {
+  color: #4a7bb6;
+}
+
+.info-title-border {
+  padding: 2rem;
+  border-bottom: #111d2d 1px solid;
+}
+
+.info-h4 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.info-p {
+  color: #111d2d;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
 }
 
 /* CSS for mobile devices */
@@ -230,6 +261,10 @@ p {
   h1 {
     font-size: 3rem;
   }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 /* For small devices and above */
@@ -239,7 +274,7 @@ p {
   }
   h1,
   p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .test {
@@ -257,9 +292,22 @@ p {
     height: 5rem;
     width: 5rem;
   }
+
+  h2 {
+    font-size: 3.1rem;
+  }
+
+  .info-h4 {
+    font-size: 2.5rem;
+  }
+
+  .info-p {
+    font-size: 1.3rem;
+  }
 }
+
 /* INFO CENTER*/
-#infoContent {
+/* #infoContent {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -268,7 +316,7 @@ p {
 .card {
   flex: 0 0 calc(50% - 20px);
   margin: 10px;
-}
+} */
 
 /* LOGIN AND REGISTER */
 .form-container {
@@ -280,10 +328,16 @@ p {
 
 .LoginRegistercard {
   max-width: 400px;
+  padding: 70px;
   margin: 0 auto;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 20px;
+}
+
+.LoginRegistercard-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
 }
 
 /* Add some padding to the top of the page */
@@ -397,6 +451,7 @@ p {
 
 .buy-button {
   margin-top: 20px;
+  margin-bottom: 50px;
   padding: 10px 20px;
   background-color: #4caf50;
   color: white;
@@ -486,7 +541,7 @@ p {
   }
 
   .hero {
-    padding-top: 15vh;
+    padding-top: 1rem;
     margin-bottom: 2rem;
   }
 
@@ -508,6 +563,7 @@ p {
 
   .main-section-header {
     font-size: 24px;
+    padding-left: 1rem;
   }
 
   .card-group {
@@ -520,19 +576,22 @@ p {
     border-radius: 10px;
     padding: 1rem;
   }
+
+  #currencyList {
+    margin-bottom: 4rem;
+  }
 }
 
 /* CSS for PC and laptop */
 @media only screen and (max-width: 1100px) {
-  .hero {
+  /* .hero {
     padding-top: 15vh;
-  }
+  } */
 
   h1 {
     font-size: 3rem;
   }
 }
-
 
 /*tables*/
 /* Styles for the table */
@@ -606,10 +665,10 @@ p {
   .table .table-header h3 {
     font-size: 20px;
   }
-  
+
   /* Additional styles to improve appearance */
   .table tbody td::after {
-    content: "";
+    content: '';
     display: block;
     clear: both;
   }
@@ -620,6 +679,6 @@ p {
     padding-bottom: 10px;
   }
 }
-#Price{
-  color: black !important
+#Price {
+  color: black !important;
 }
