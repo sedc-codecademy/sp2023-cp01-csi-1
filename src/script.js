@@ -439,7 +439,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Attach the logoutUser() function to the logout button click event
     const logoutBtn = document.getElementById('logoutBtn');
-    logoutBtn.addEventListener('click', logoutUser);
+    logoutBtn.addEventListener('click', logoutUser) ;
+    
+
   }
 
   function createRegistrationForm() {
@@ -712,7 +714,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <img src="${coin.image}" alt="${coin.name}">
           <div class="crypto-info">
             <h4>${coin.name}</h4>
-            <p>Price: $${coin.current_price}</p>
+            <p id="Price">Price: $${coin.current_price}</p>
             <div class="quantity-input">
               <span>Quantity:</span>
               <input type="number" class="crypto-quantity-input" min="0" step="1" value="0">

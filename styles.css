@@ -258,7 +258,7 @@ p {
     width: 5rem;
   }
 }
-
+/* INFO CENTER*/
 #infoContent {
   display: flex;
   flex-wrap: wrap;
@@ -347,6 +347,11 @@ p {
 }
 
 /* WALLET*/
+/* Styles for Crypto Simulator page */
+#walletInfo {
+  margin-top: 20px;
+}
+
 #cryptoList {
   display: flex;
   flex-wrap: wrap;
@@ -376,13 +381,12 @@ p {
 .crypto-info {
   flex: 1;
 }
+
 .crypto-quantity-input {
   width: 30px;
 }
 
 .quantity-input {
-  /* display: flex;
-  align-items: center; */
   margin-top: 10px;
   width: 5px;
 }
@@ -443,6 +447,17 @@ p {
   margin-right: 5px;
 }
 
+/* Responsive styles */
+@media (max-width: 767px) {
+  .crypto-list-item {
+    width: 100%;
+  }
+
+  .quantity-input {
+    display: flex;
+    align-items: center;
+  }
+}
 /*coinData*/
 #coinData {
   width: 40%;
@@ -516,4 +531,95 @@ p {
   h1 {
     font-size: 3rem;
   }
+}
+
+
+/*tables*/
+/* Styles for the table */
+/* Styles for the table */
+.table {
+  width: 100%;
+}
+
+.table-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table-header h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.table thead th {
+  font-weight: bold;
+}
+
+.table tbody td {
+  padding: 10px;
+}
+
+.table tbody img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.table tbody .text-left {
+  text-align: left;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .table thead {
+    display: none;
+  }
+
+  .table tbody td {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .table tbody td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    float: left;
+  }
+
+  .table tbody td:last-child {
+    border-bottom: none;
+  }
+
+  .table tbody img {
+    margin: 0 auto;
+  }
+
+  .table tbody .text-left {
+    text-align: center;
+  }
+
+  .table .table-header {
+    margin-bottom: 10px;
+  }
+
+  .table .table-header h3 {
+    font-size: 20px;
+  }
+  
+  /* Additional styles to improve appearance */
+  .table tbody td::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .table tbody tr {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+}
+#Price{
+  color: black !important
 }
