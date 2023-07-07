@@ -593,10 +593,15 @@ document.addEventListener('DOMContentLoaded', function () {
     sectionItems.classList = 'main-section';
     sectionItems.innerHTML = `
     <div class="container">
-    <div class="row">
-        <h1 class="main-section-header">Buy and trade the most popular coins instantly!</h1>
+    <div class="row aos-init aos-animate">
+        <h1 class="main-section-header" data-aos="fade-right"
+        data-aos-delay="300"
+        data-aos-duration="500">
+        Buy and trade the most popular coins instantly!</h1>
       </div>
-      <div class="card-group">
+      <div class="card-group" data-aos="fade-up"
+      data-aos-delay="500"
+      data-aos-duration="900">
         <div class="card text-center align-items-center card-borders">
             <img src="/public/bitcoin-logo-svgrepo-com.svg" alt="" class="card-img-top svg-card">
             <div class="card-body">
